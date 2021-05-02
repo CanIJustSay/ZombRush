@@ -310,6 +310,7 @@ function setup(){
 if(Layout==="Soldier"){Ammo=40;}
 if(Layout=="Assassin"){Ammo=1;}
 if(Layout==="Medic"){Ammo=70;}
+drawLevel();
 function draw(){ 
     tipX = cos(ang)*LT;
     tipY = sin(ang)*LT;
@@ -448,7 +449,7 @@ if(shooting===false){Mov=5;}
       text("Kills: "+kills,600,200);
       text("Ammo: "+Ammo,600,250);
         cam.setView(player.x,player.y,1);  
-        drawLevel();
+
     rounds(); 
         for(var i = 0; i < bullets.length; i++){bullets[i].draw();} 
         //boarders

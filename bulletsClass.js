@@ -1,4 +1,4 @@
-var Bullet = function( speed, initialAngle){
+var Bullet = function(speed, initialAngle){
 this.ang = atan2(mouseY-(player.y+cam.y),mouseX - (player.x+cam.x))
     this.x = player.x;
     this.y =player.y;
